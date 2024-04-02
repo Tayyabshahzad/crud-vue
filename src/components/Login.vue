@@ -42,7 +42,7 @@ export default {
                     localStorage.setItem("token", token);
 
                     // Redirect to dashboard page upon successful login
-                    this.$router.push({ name: 'Dashboard' });
+                    this.$router.push({ name: 'Category' });
 
                     console.warn('Login successful');
                 }

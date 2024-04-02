@@ -1,9 +1,8 @@
 import Home from './components/Login.vue'
 import SignUp from './components/SignUp.vue'
 import Login from './components/Login.vue'
-import Add from './components/Add.vue'
-import Update from './components/Update.vue'
-import Dashboard from './components/Dashboard.vue'
+import Category from './components/Category.vue'
+import Car from './components/Car.vue'
 import {createRouter, createWebHistory} from 'vue-router'
 
 const routes = [
@@ -22,21 +21,17 @@ const routes = [
         component: Login,
         path:'/login'
     },
+
     {
-        name: 'Add',
-        component: Add,
-        path:'/add'
-    },
-    {
-        name: 'Update',
-        component: Update,
-        path:'/update/:id'
+        name: 'Category',
+        component: Category,
+        path:'/category'
     },
 
     {
-        name: 'Dashboard',
-        component: Dashboard,
-        path:'/dashboard'
+        name: 'Cars',
+        component: Car,
+        path:'/cars'
     },
 
 
